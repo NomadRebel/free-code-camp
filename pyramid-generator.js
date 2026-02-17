@@ -1,18 +1,32 @@
 function pyramid(str, rows, bool){
-    let pyr = "";
-    for(let i = 0; i<=rows; i++){
-        let space = i;
-        for(let j =i; j<=2*rows-i-1; j++){
-            if(space) {
-                console.log(" ");
-                space--;
-            }
-            else{
-                console.log(str+" ");
-            }
-        }
-        
-        
+  let final="";
+  if(bool==true){
+    for(let i=rows; i>=1; i--){
+      let space = " ";
+      let pyramid = space.repeat((rows-i)) + str.repeat(i*2-1);
+      if(i==rows){
+        final+= pyramid;
+      }
+      else{
+      final += pyramid+'\n';
+      }
     }
+    return final;
+  }
+  else{
+    for(let i=1; i<=rows; i++){
+      let space = " ";
+      let pyramid = space.repeat((rows-i)) + str.repeat(i*2-1);
+      
+       final+= pyramid+"\n";
+      
+      // if(i==rows){
+      //   break;
+      // }
+    }
+    return "\n"+final;
+  }
 }
-console.log(pyramid("o",4));
+
+
+console.log(pyramid("o", 4, false));
