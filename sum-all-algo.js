@@ -6,10 +6,10 @@ function sumAll(arr){
         }
     }
     else{
-        for(let i=arr[1];i>=arr[0];i--){
+        for(let i=arr[0];i>=arr[1];i--){
             sum+=i;
         }
     }
     return sum;
 }
-console.log(sumAll([5,10]))
+console.log(sumAll([4,1]))
