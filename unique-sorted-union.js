@@ -15,4 +15,3 @@ function uniteUnique(...args){
 }
 
 console.log(uniteUnique([1,3,2],[5,2,1,4],[2,1]));
-console.log(typeof([1,2,3,4,4]))
