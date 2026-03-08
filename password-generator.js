@@ -11,4 +11,4 @@ function generatePassword(length){
 }
 
 const password = generatePassword(5);
-console.log(`Generate password: ${password}`);
+console.log(`Generated password: ${password}`);
