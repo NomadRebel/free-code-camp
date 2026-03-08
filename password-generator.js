@@ -10,5 +10,5 @@ function generatePassword(length){
     return newArr.join("");
 }
 
-const password = generatePassword(5);
+const password = generatePassword(10);
 console.log(`Generated password: ${password}`);

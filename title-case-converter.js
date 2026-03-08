@@ -1,4 +1,4 @@
-const str = "nikhil verma iS a programmer"
+const str = "John doe iS a programmer"
 
 
 function titleCase(str){
